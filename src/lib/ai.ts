@@ -1,3 +1,10 @@
+export const AI_MODELS = {
+  'gpt-4': 'GPT-4',
+  'gpt-3.5-turbo': 'GPT-3.5 Turbo'
+} as const
+
+export type AIModel = keyof typeof AI_MODELS
+
 const FALLBACK_RESPONSES = [
   "またタスクですか？どうせ3日で忘れるくせに意欲的ですね",
   "素晴らしい！今度こそ有言実行してくれるんでしょうね？",
